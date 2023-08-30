@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Menu | Revolvtools</title>
+    <link rel="stylesheet" href="dashboard.css"> 
+    <!---Boxicon CDN Link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/boxicons.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class='bx bxl-c-plus-plus'></i>
+                <div class="logo-name">Nesterlink</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                 <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                <span class="tooltips">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links-name">Dashboard</span>
+                </a>
+                <span class="tooltips">Dashboard</span>
+            </li>
+            <li>
+            
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="links-name">User</span>
+                </a>
+                <span class="tooltips">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-chat'></i>
+                    <span class="links-name">Message</span>
+                </a>
+                <span class="tooltips">Message</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links-name">Analytics</span>
+                </a>
+                <span class="tooltips">Analytics</span>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder'></i>
+                    <span class="links-name">File Manager</span>
+                </a>
+                <span class="tooltips">File Manager</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cart'></i>
+                    <span class="links-name">Order</span>
+                </a>
+                <span class="tooltips">Order</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart'></i>
+                    <span class="links-name">Saved</span>
+                </a>
+                <span class="tooltips">Saved</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="links-name">Setting</span>
+                </a>
+                <span class="tooltips">Setting</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <img src="Images/profile.jpg" alt="">
+                    <div class="name-job">
+                        <div class="name">Esaint Mjay</div>
+                        <div class="job">Web Developer</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-out' id="log-out"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home-content">
+        <div class="text">Home content</div>
+    </div>
+    <main>
+        <section>
+            
+        </section>
+    </main>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector(".bx-search");
+
+        btn.onclick =function() {
+            sidebar.classList.toggle("active");
+        }
+        searchBtn.onclick =function() {
+            sidebar.classList.toggle("active");
+        }
+
+
+    </script>
+
+
+</body>
+</html>
